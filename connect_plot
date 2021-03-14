@@ -1,0 +1,4 @@
+#!/bin/bash
+
+./btble -b 06:05:04:C8:D2:05 | python3.7 graph_accelerometer.py
+
