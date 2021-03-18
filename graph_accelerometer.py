@@ -79,21 +79,6 @@ def animate(i, x_axis, x_readings, y_readings, z_readings):
     y_plot.title.set_text("Y-Axis")
     z_plot.title.set_text("Z-Axis")
 
-    # z_plot.annotate(text_reading,  # Your string
-
-    #         # The point that we'll place the text in relation to 
-    #         xy=(0.5, 0), 
-    #         # Interpret the x as axes coords, and the y as figure coords
-    #         xycoords=('axes fraction', 'figure fraction'),
-
-    #         # The distance from the point that the text will be at
-    #         xytext=(0, -2),  
-    #         # Interpret `xytext` as an offset in points...
-    #         textcoords='offset points',
-
-    #         # Any other text parameters we'd like
-    #         size=12, ha='center', va='bottom')
-
 # Set up plot to call animate() function periodically
 ani = animation.FuncAnimation(fig, animate, fargs=(x_axis, x_readings, y_readings, z_readings), interval=interval)
 plt.show()
